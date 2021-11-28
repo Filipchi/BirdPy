@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main class="p-4 m-5 fw-bold">
+    <h1>{{data.description}}</h1>
+    <p class="lead container p-5 my-5">In this project you can find information about resident and migratory birds of the Colombian territory, specifically birds of the <strong>"Eje Cafetero Colombiano"</strong>.</p>
+    <p class="lead">
+        <a href="{{ url_for('catalog') }}" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Learn more</a>
+    </p>
+</main>
+{% endblock %}
